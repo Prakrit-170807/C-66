@@ -22,7 +22,7 @@ export default class App extends React.Component {
         <View style={styles.container}>
           <Header backgroundColor={'black'} centerComponent={{ text: "Spelling Bee", style: { color: "white", fontSize: 20, width: 200, borderRadius: 8, borderWidth: -1, } }}></Header>
 
-          <Image style={styles.img} source={require("./spell bee.png")}></Image>
+          <Image style={styles.img} source={require("./spellbee.png")}></Image>
 
           <TextInput style={styles.textInput} value={this.state.textinp} onChangeText={(text) => { (this.setState({ textinp: text })) }}></TextInput>
 
@@ -75,6 +75,7 @@ const styles = StyleSheet.create({
     borderWidth: 5,
     borderColor: "#EEC229",
     borderRadius: 10,
+    width: '80%',
   },
   img: {
     marginTop: 100,
